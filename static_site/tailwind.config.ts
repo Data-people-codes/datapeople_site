@@ -8,11 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      // custom color
+      colors:{
+        'atom_bg':'#292d34',
+        'atom_red': '#c16266',
+        'atom_green': '	#90b061',
+        'atom_green_light':'#9bbf50',
+        'atom_orange': '#be8a59'
+      }
     },
   },
   plugins: [],
