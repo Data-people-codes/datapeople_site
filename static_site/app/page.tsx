@@ -1,9 +1,11 @@
 import Image from "next/image"
+import Course from "./components/Course"
 
 export default function Home() {
   return (
     <main className=" justify-center bg-atom_bg min-h-full text-white font-medium">
 
+{/* Intro Section */}
       <section id="intro" className=" flex flex-row flex-wrap justify-around content-center items-center p-32">
 
         <div className=" w-2/3">
@@ -41,8 +43,25 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="courses">
-        <h1>courses</h1>
+
+{/* Course Section */}
+      <section id="courses" className=" pb-20">
+        <h1 className=" text-4xl text-center p-16"> <span className=" text-6xl text-datacamp_green">Project-based</span> Live Classes</h1>
+
+        <div className=" flex flex-row flex-wrap justify-around content-center items-center">
+
+          <Course CourseName="Python" CourseDesc="Python A-Z, Learn Python from the best" src="/python-logo.svg"/>
+
+          <Course CourseName="ML Crash Course" CourseDesc="Everything about Machine Learning, hands on with projects" src="/python-logo.svg"/>
+          <Course CourseName="DL Crash Course" CourseDesc="Everything about Deep Learning, hands on with projects" src="/python-logo.svg"/>
+          <Course CourseName="MLOPS" CourseDesc="Apply ML to Production! Just a click away!" src="/python-logo.svg"/>
+        </div>
+      </section>
+
+{/* Seminer */}
+      <section id="seminer">
+      <h1 className=" text-4xl text-center p-16"> <span className=" text-6xl text-datacamp_green">Free Seminer</span> Each Month</h1>
+
       </section>
       
       
