@@ -12,7 +12,7 @@ const config: Config = {
       colors:{
         'atom_bg':'#292d34',
         'atom_red': '#c16266',
-        'atom_green': '	#90b061',
+        'datacamp_green': '	#03ef62',
         'atom_green_light':'#9bbf50',
         'atom_orange': '#be8a59'
       }
