@@ -1,15 +1,24 @@
 import Image from "next/image"
 import Course from "./components/Course"
+import { IBM_Plex_Sans } from "next/font/google"
+
+const ibm_plex_sans = IBM_Plex_Sans({
+  subsets:['latin'],
+  weight:['400','700']
+})
 
 export default function Home() {
   return (
+    <div className={ibm_plex_sans.className}>
+    
+
     <main className=" justify-center bg-atom_bg min-h-full text-white font-medium">
 
       {/* Intro Section */}
       <section id="intro" className=" flex flex-row flex-wrap justify-center lg:justify-around content-center items-center px-6 py-12 md:p-24 text-center lg:text-left">
 
         <div className=" w-2/3">
-          <h1 className=" text-orange-300 text-6xl sm:text-8xl pb-12">Data People</h1>
+          <h1 className=" text-orange-300 text-6xl font-bold sm:text-8xl pb-12">Data People</h1>
           <div className=" pt-4 pb-8">
             <h2 className=" text-4xl pb-4">From <span className=" text-atom_red font-bold">No Code</span> to <span className=" underline underline-offset-4 text-datacamp_green font-bold">MLOPS</span>.</h2>
             <p className=" text-xl font-normal">Unlock the power of data and AI by learning <br />Python, ChatGPT, SQL, Power BI, and more.</p>
@@ -59,15 +68,16 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Seminer */}
-      <section id="seminer">
-        <h1 className=" text-4xl text-center p-16"> <span className=" text-6xl text-datacamp_green">Free Seminer</span> Each Month</h1>
+      <section id="seminer" className=" pt-6 px-20">
+      <h1 className=" text-2xl md:text-4xl text-center p-16"> <span className=" underline underline-offset-8 text-4xl md:text-6xl text-datacamp_green">Free Seminer</span> Each Month</h1>
 
       </section>
 
 
     </main>
-
+    </div>
 
   )
 }

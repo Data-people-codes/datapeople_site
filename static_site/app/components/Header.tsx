@@ -12,7 +12,7 @@ const Header = () => {
 
             <div>
                 <ul className=" flex justify-evenly  items-center">
-                    <a href="/course/Coursepage" className=" pr-8 text-lg text-slate-500  hover:text-white">Courses</a>
+                    <a href="/course" className=" pr-8 text-lg text-slate-500  hover:text-white">Courses</a>
                     <a href="#" className=" pr-8 text-lg  text-slate-500  hover:text-white">Meet Instructors</a>
 
                     <div className=" pr-8">
