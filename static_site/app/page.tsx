@@ -9,7 +9,7 @@ export default function Home() {
       <section id="intro" className=" flex flex-row flex-wrap justify-center lg:justify-around content-center items-center px-6 py-12 md:p-24 text-center lg:text-left">
 
         <div className=" w-2/3">
-          <h1 className=" text-6xl sm:text-8xl pb-12">Data People</h1>
+          <h1 className=" text-orange-300 text-6xl sm:text-8xl pb-12">Data People</h1>
           <div className=" pt-4 pb-8">
             <h2 className=" text-4xl pb-4">From <span className=" text-atom_red font-bold">No Code</span> to <span className=" underline underline-offset-4 text-datacamp_green font-bold">MLOPS</span>.</h2>
             <p className=" text-xl font-normal">Unlock the power of data and AI by learning <br />Python, ChatGPT, SQL, Power BI, and more.</p>
