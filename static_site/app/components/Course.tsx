@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { sora } from "../layout";
 
@@ -20,7 +21,7 @@ function Course({ CourseName, CourseDesc, src }: { CourseName: string, CourseDes
         <p className=" block px-6 pb-5 text-base font-normal text-atom_bg">{CourseDesc}</p>
       </div>
 
-    </div>
+      </div>
 
   </>
 }
