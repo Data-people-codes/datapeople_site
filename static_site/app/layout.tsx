@@ -2,7 +2,12 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { Sora } from "next/font/google"
 
+export const sora = Sora({
+  subsets:['latin'],
+  weight:['400','700']
+})
 
 export const metadata: Metadata = {
   title: 'Data People',
@@ -16,9 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <Header />
-      {children}
-      <Footer/>
+      <div className={sora.className}>
+        <Header />
+        {children}
+        <Footer />
+      </div>
+
     </>
   );
 };

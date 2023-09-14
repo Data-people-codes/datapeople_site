@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { sora } from "../layout";
+
 
 // course component
 
@@ -13,9 +15,9 @@ function Course({ CourseName, CourseDesc, src }: { CourseName: string, CourseDes
           height={75}
         />
       </div>
-      <div>
-        <h1 className=" mb-2 px-6 block font-sans text-2xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">{CourseName}</h1>
-        <p className=" block px-6 pb-5 font-sans text-base font-normal leading-relaxed text-inherit antialiased">{CourseDesc}</p>
+      <div className={sora.className}>
+        <h1 className=" mb-2 px-6 block text-2xl font-bold tracking-normal text-atom_bg">{CourseName}</h1>
+        <p className=" block px-6 pb-5 text-base font-normal text-atom_bg">{CourseDesc}</p>
       </div>
 
     </div>

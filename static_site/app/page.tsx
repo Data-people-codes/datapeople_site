@@ -1,16 +1,9 @@
 import Image from "next/image"
 import Course from "./components/Course"
-import { IBM_Plex_Sans } from "next/font/google"
 
-const ibm_plex_sans = IBM_Plex_Sans({
-  subsets:['latin'],
-  weight:['400','700']
-})
 
 export default function Home() {
   return (
-    <div className={ibm_plex_sans.className}>
-    
 
     <main className=" justify-center bg-atom_bg min-h-full text-white font-medium">
 
@@ -20,7 +13,7 @@ export default function Home() {
         <div className=" w-2/3">
           <h1 className=" text-orange-300 text-6xl font-bold sm:text-8xl pb-12">Data People</h1>
           <div className=" pt-4 pb-8">
-            <h2 className=" text-4xl pb-4">From <span className=" text-atom_red font-bold">No Code</span> to <span className=" underline underline-offset-4 text-datacamp_green font-bold">MLOPS</span>.</h2>
+            <h2 className=" text-2xl pb-4">From <span className=" text-atom_red text-5xl underline underline-offset-4 font-bold">No Code</span> to <span className=" underline underline-offset-4 text-datacamp_green text-5xl font-bold">MLOPS</span>.</h2>
             <p className=" text-xl font-normal">Unlock the power of data and AI by learning <br />Python, ChatGPT, SQL, Power BI, and more.</p>
           </div>
 
@@ -48,7 +41,7 @@ export default function Home() {
 
       {/* Course Section */}
       <section id="courses" className=" pt-6 px-20">
-        <h1 className=" text-2xl md:text-4xl text-center p-16"> <span className=" underline underline-offset-8 text-4xl md:text-6xl text-datacamp_green">Project-based</span> Live Classes</h1>
+        <h1 className=" text-base md:text-2xl text-center p-16"> <span className=" underline underline-offset-8 font-semibold text-4xl md:text-6xl text-datacamp_green">Project-Based</span> Live Classes</h1>
 
         <div className=" flex flex-row flex-wrap justify-around content-center items-center">
 
@@ -60,24 +53,24 @@ export default function Home() {
 
           <Course CourseName="MLOPS" CourseDesc="Apply ML to Production! Just a click away!" src="/production-concept-svgrepo-com.svg" />
 
-          <Course CourseName="Project Pro" CourseDesc="Want to enhance portfolio? We got 50+ curated projects just for you" src="/github-svgrepo-com.svg" />
+          <Course CourseName="Project Pro" CourseDesc="Want to enhance portfolio? We got 50+ curated projects." src="/github-svgrepo-com.svg" />
 
           <Course CourseName="Research Publication" CourseDesc="Looking for a research group to learn and publish your work? " src="/experiment-svgrepo-com.svg" />
 
-          <Course CourseName="Expert Solution" CourseDesc="Looking for an expert for enterprise solution? Drop a message." src="/boss-svgrepo-com.svg" />
+          <Course CourseName="Expert Solution" CourseDesc="Looking for an expert for enterprise solution?" src="/boss-svgrepo-com.svg" />
         </div>
       </section>
 
 
       {/* Seminer */}
       <section id="seminer" className=" pt-6 px-20">
-      <h1 className=" text-2xl md:text-4xl text-center p-16"> <span className=" underline underline-offset-8 text-4xl md:text-6xl text-datacamp_green">Free Seminer</span> Each Month</h1>
+        <h1 className=" text-base md:text-2xl text-center p-16"> <span className=" underline underline-offset-8 font-semibold text-4xl md:text-6xl text-datacamp_green">Free Seminer</span> Each Month</h1>
 
       </section>
 
 
     </main>
-    </div>
+
 
   )
 }
