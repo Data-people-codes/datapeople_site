@@ -1,6 +1,6 @@
 export default function Footer() {
     return <>
-        <footer className=" bg-atom_bg">
+        <footer className=" bg-slate-950">
             <div className=" flex flex-row justify-around items-center p-20">
                 <div className=" w-1/3">
                     <h1 className="text-5xl text-slate-200 font-bold">Data People</h1>

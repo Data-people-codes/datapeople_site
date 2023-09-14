@@ -1,8 +1,7 @@
 const Header = () => {
     // design navbar
     return <>
-        <nav className=" bg-atom_bg  h-20 flex flex-row flex-wrap justify-around content-center items-center text-white font-medium
-                            sticky">
+        <nav className=" bg-slate-950 h-20 flex flex-row flex-wrap justify-around content-center items-center text-white font-medium">
 
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

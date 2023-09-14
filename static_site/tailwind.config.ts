@@ -15,7 +15,11 @@ const config: Config = {
         'datacamp_green': '	#03ef62',
         'atom_green_light':'#9bbf50',
         'atom_orange': '#be8a59'
-      }
+      },
+      // bg hero image
+      backgroundImage:{
+        'hero-pattern':"url('/hero-img.png')"
+      },
     },
   },
   plugins: [],
