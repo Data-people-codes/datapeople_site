@@ -42,11 +42,11 @@ export default function Home() {
 
         <div className=" flex flex-row flex-wrap justify-around content-center items-center">
 
-          <CurrentCourse CourseName="All about Python" CourseDesc="Python A-Z, Learn Python from the best" src="/python.jpg" />
+          <CurrentCourse CourseName="All about Python" CourseDesc="Python A-Z, Learn Python from the best" src="/python.jpg" btnlink="/python" />
 
-          <CurrentCourse CourseName="Machine Learning Crash Course" CourseDesc="Everything about Machine Learning, hands on with projects" src="/ml_banner.jpg" />
+          <CurrentCourse CourseName="Machine Learning Crash Course" CourseDesc="Everything about Machine Learning, hands on with projects" src="/ml_banner.jpg" btnlink="/python" />
 
-          <CurrentCourse CourseName="Deep Learning Crash Course" CourseDesc="Everything about Deep Learning, hands on with projects" src="/deepLearning.jpeg" />
+          <CurrentCourse CourseName="Deep Learning Crash Course" CourseDesc="Everything about Deep Learning, hands on with projects" src="/deepLearning.jpeg" btnlink="/python" />
         </div>
       </section>
 

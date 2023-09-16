@@ -5,7 +5,7 @@ import { sora } from "../layout";
 
 // course component
 
-function CurrentCourse({ CourseName, CourseDesc, src }: { CourseName: string, CourseDesc: string, src: string }) {
+function CurrentCourse({ CourseName, CourseDesc, src, btnlink }: { CourseName: string, CourseDesc: string, src: string, btnlink:string }) {
     return <>
         <div className=" mt-6 flex w-80 flex-col rounded-md bg-gray-200 bg-clip-border text-gray-900 shadow-md">
             <div className=" m-4 rounded-sm aspect-video relative">
@@ -22,7 +22,7 @@ function CurrentCourse({ CourseName, CourseDesc, src }: { CourseName: string, Co
                 <p className=" block px-6 pb-5 text-base font-medium text-atom_bg">{CourseDesc}</p>
                 {/* design a button */}
                 <button className=" block items-center rounded-sm mx-6 my-6 w-fit px-10 py-2 text-white hover:text-atom_bg bg-atom_bg hover:bg-datacamp_green">
-                    See Details
+                    <a href={btnlink}>See Details</a> 
                 </button>
             </div>
 
