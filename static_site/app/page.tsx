@@ -20,11 +20,11 @@ export default function Home() {
           </div>
 
           <div className=" flex items-center justify-evenly">
-            <button className=" inline-flex items-center mx-3 border-2 border-white outline-white hover:border-transparent hover:bg-white text-white hover:text-atom_bg py-2 px-10 rounded-sm">
+            <button className=" inline-flex items-center mx-2 border-2 border-white outline-white hover:border-transparent hover:bg-white text-white hover:text-atom_bg py-2 px-10 rounded-sm">
               Browse Courses
             </button>
 
-            <button className=" inline-flex items-center mx-3 bg-white text-atom_bg hover:bg-datacamp_green py-2 px-10 rounded-sm">
+            <button className=" inline-flex items-center mx-2 bg-white text-atom_bg hover:bg-datacamp_green py-2 px-10 rounded-sm">
               Register Now
             </button>
           </div>
@@ -42,11 +42,11 @@ export default function Home() {
 
         <div className=" flex flex-row flex-wrap justify-around content-center items-center">
 
-          <CurrentCourse CourseName="Noob to Pythonista" CourseDesc="Python A-Z, Learn Python from the best" src="/ml_banner.jpg" />
+          <CurrentCourse CourseName="All about Python" CourseDesc="Python A-Z, Learn Python from the best" src="/python.jpg" />
 
-          <CurrentCourse CourseName="ML Crash Course" CourseDesc="Everything about Machine Learning, hands on with projects" src="/ml_banner.jpg" />
+          <CurrentCourse CourseName="Machine Learning Crash Course" CourseDesc="Everything about Machine Learning, hands on with projects" src="/ml_banner.jpg" />
 
-          <CurrentCourse CourseName="DL Crash Course" CourseDesc="Everything about Deep Learning, hands on with projects" src="/ml_banner.jpg" />
+          <CurrentCourse CourseName="Deep Learning Crash Course" CourseDesc="Everything about Deep Learning, hands on with projects" src="/deepLearning.jpeg" />
         </div>
       </section>
 
@@ -81,21 +81,22 @@ export default function Home() {
 
       {/* Seminer */}
       <section id="community" className=" pt-6 px-20">
-        <div className=" flex flex-row">
-          <div className="w-1/3">
-            <div className="p-16 text-center">
-              <h1 className=" pb-6 underline underline-offset-8 font-semibold text-2xl sm:text-4xl text-datacamp_green">Campus Ambassador</h1>
-              <h2 className="text-base md:text-2xl">Make the change, that you dream of</h2>
-            </div>
-          </div>
-          <div className="w-2/3">
-            <div className="p-16 text-center">
-              <h1 className=" pb-6 underline underline-offset-8 font-semibold text-2xl sm:text-4xl text-datacamp_green">Sign Up for Updates</h1>
-              <h2 className="text-base md:text-2xl">Make the change, that you dream of</h2>
-            </div>
-          </div>
+        <div className="p-16 text-center">
+          <h1 className=" pb-6 underline underline-offset-8 font-semibold text-4xl sm:text-6xl text-datacamp_green">Campus Ambassador</h1>
+          <h2 className="text-base md:text-2xl">Make the change, that you dream of</h2>
         </div>
       </section>
+
+      {/* Sign Up */}
+      <section className=" pt-6 px-20">
+        <div className="p-16 text-center">
+          <h1 className=" pb-6 underline underline-offset-8 font-semibold text-4xl sm:text-6xl text-datacamp_green">Sign Up for Updates</h1>
+          <h2 className="text-base md:text-2xl">Make the change, that you dream of</h2>
+        </div>
+      </section>
+
+
+
 
 
     </main>
