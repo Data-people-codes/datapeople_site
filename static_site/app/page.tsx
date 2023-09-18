@@ -79,13 +79,23 @@ export default function Home() {
       </section>
 
 
-      {/* Seminer */}
-      <section id="community" className=" pt-6 px-20">
-        <div className="p-16 text-center">
-          <h1 className=" pb-6 underline underline-offset-8 font-semibold text-4xl sm:text-6xl text-datacamp_green">Campus Ambassador</h1>
-          <h2 className="text-base md:text-2xl">Make the change, that you dream of</h2>
+      {/* student */}
+      <section id="campusAmbassador" className="flex flex-col md:flex-row p-4 md:p-20 bg-white">
+        <div className="w-full md:w-1/2 aspect-video relative">
+          <Image
+          fill
+          src={'/students.png'}
+          alt="students"/>
+        </div>
+        <div className=" w-full md:w-1/2 p-16 text-center md:text-left">
+          <h1 className=" pb-6 font-semibold  text-5xl md:text-6xl text-atom_red">Become a Campus Ambassador</h1>
+          <h2 className=" text-atom_bg text-xl md:text-2xl">Make the change, that you dream of</h2>
         </div>
       </section>
+
+
+
+
 
       {/* Sign Up */}
       <section className=" pt-6 px-20">
