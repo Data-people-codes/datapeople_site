@@ -7,7 +7,7 @@ import { sora } from "../layout";
 
 function CurrentCourse({ CourseName, CourseDesc, src, btnlink }: { CourseName: string, CourseDesc: string, src: string, btnlink:string }) {
     return <>
-        <div className=" mt-6 flex w-80 flex-col rounded-md bg-gray-200 bg-clip-border text-gray-900 shadow-md">
+        <div className=" mt-6 flex w-80 flex-col rounded-md bg-gray-200 bg-clip-border text-gray-900 hover:shadow-lg hover:shadow-slate-600">
             <div className=" m-4 rounded-sm aspect-video relative">
                 <Image
                 fill

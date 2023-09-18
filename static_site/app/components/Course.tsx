@@ -7,7 +7,7 @@ import { sora } from "../layout";
 
 function Course({ CourseName, CourseDesc, src }: { CourseName: string, CourseDesc: string, src: string }) {
   return <>
-    <div className=" mt-6 flex w-80 flex-col rounded-xl bg-gray-200 bg-clip-border text-gray-900 shadow-md">
+    <div className=" mt-6 flex w-80 flex-col rounded-xl bg-gray-200 bg-clip-border text-gray-900 hover:shadow-xl hover:shadow-slate-600">
       <div className=" p-6">
         <Image
           src={src}

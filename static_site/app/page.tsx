@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Course from "./components/Course"
 import CurrentCourse from "./components/CurrentCourse"
+import Sidecard from "./components/Sidecard"
 
 
 
@@ -80,17 +81,34 @@ export default function Home() {
 
 
       {/* student */}
-      <section id="campusAmbassador" className="flex flex-col md:flex-row p-4 md:p-20 bg-white">
-        <div className="w-full md:w-1/2 aspect-video relative">
-          <Image
-          fill
-          src={'/students.png'}
-          alt="students"/>
+      <section id="campusAmbassador" className="flex flex-col p-8 md:py-16 bg-white">
+        <div className=" w-full px-16 py-8 text-center">
+          <h1 className=" pb-4 font-semibold  text-5xl md:text-6xl text-atom_red">Join Us</h1>
+          <h2 className=" text-atom_bg text-base md:text-2xl">Become the change, that you dream of</h2>
         </div>
-        <div className=" w-full md:w-1/2 p-16 text-center md:text-left">
-          <h1 className=" pb-6 font-semibold  text-5xl md:text-6xl text-atom_red">Become a Campus Ambassador</h1>
-          <h2 className=" text-atom_bg text-xl md:text-2xl">Make the change, that you dream of</h2>
+        {/* contents */}
+        <div className="flex flex-col md:flex-row flex-wrap justify-around content-center items-center">
+          <div className=" w-full md:w-1/3 text-atom_bg">
+
+            <Sidecard src="/student-svgrepo-com.svg" heading="Campus Ambassador"
+              text="Take Data People to your campus. Organize events and workshops, get exclusive benefits, goodies and lots more. " />
+
+            <Sidecard src="/team-group-svgrepo-com.svg" heading="Corporate Mentorship"
+              text="Looking for a corporate mentor? We got you. Solve industry problems with us." />
+
+            <Sidecard src="/physics-science-svgrepo-com.svg" heading="Research Help"
+              text="Stuck in your research? We got you. Get help from our research team." />
+          </div>
+          <div className=" w-full md:w-2/3">
+            <Image
+              src={'/students.jpg'}
+              width={750}
+              height={750}
+              alt="students" />
+          </div>
         </div>
+
+
       </section>
 
 
