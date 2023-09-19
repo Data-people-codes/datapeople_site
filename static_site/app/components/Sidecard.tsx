@@ -12,7 +12,7 @@ export default function Sidecard({src, heading, text}: {src: string, heading: st
             />
         </div>
         <div className=" w-2/3">
-            <h1 className=" text-2xl font-bold pb-2">{heading}</h1>
+            <h1 className=" text-lg md:text-2xl font-bold pb-2">{heading}</h1>
             <p className=" text-sm">{text}</p>
         </div>
     </div>

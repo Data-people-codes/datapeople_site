@@ -21,10 +21,12 @@ export default function Home() {
           </div>
 
           <div className=" flex items-center justify-evenly">
-            <button className=" inline-flex items-center mx-2 border-2 border-white outline-white hover:border-transparent hover:bg-white text-white hover:text-atom_bg py-2 px-10 rounded-sm">
-              Browse Courses
-            </button>
-
+            <a href="/courses">
+              <button className=" inline-flex items-center mx-2 border-2 border-white outline-white hover:border-transparent hover:bg-white text-white hover:text-atom_bg py-2 px-10 rounded-sm">
+                Browse Courses
+              </button>
+            </a>
+            
             <button className=" inline-flex items-center mx-2 bg-white text-atom_bg hover:bg-datacamp_green py-2 px-10 rounded-sm">
               Register Now
             </button>
@@ -87,8 +89,8 @@ export default function Home() {
           <h2 className=" text-atom_bg text-base md:text-2xl">Become the change, that you dream of</h2>
         </div>
         {/* contents */}
-        <div className="flex flex-col md:flex-row flex-wrap justify-around content-center items-center">
-          <div className=" w-full md:w-1/3 text-atom_bg">
+        <div className="flex flex-col flex-wrap content-center items-center">
+          <div className=" flex flex-col md:flex-row justify-around text-atom_bg p-8">
 
             <Sidecard src="/student-svgrepo-com.svg" heading="Campus Ambassador"
               text="Take Data People to your campus. Organize events and workshops, get exclusive benefits, goodies and lots more. " />
@@ -99,7 +101,7 @@ export default function Home() {
             <Sidecard src="/physics-science-svgrepo-com.svg" heading="Research Help"
               text="Stuck in your research? We got you. Get help from our research team." />
           </div>
-          <div className=" w-full md:w-2/3">
+          <div className=" text-center">
             <Image
               src={'/students.jpg'}
               width={750}
