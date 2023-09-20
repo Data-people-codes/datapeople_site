@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
 
 
-            <div className=" px-20 py-8">
+            <div className=" px-24 py-8">
                 <h1 className=" text-sm font-medium text-slate-400">2023 © All rights reserved by Data People.Inc</h1>
             </div>
         </footer>
